@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="96.0" minHeight="0.0" prefHeight="17.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button1" GridPane.rowIndex="1">
+         <graphic>
+            <TextField fx:id="ONE" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <graphic>
+            <TextField fx:id="TWO" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <graphic>
+            <TextField fx:id="THREE" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button4" GridPane.rowIndex="2">
+         <graphic>
+            <TextField fx:id="FOUR" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <graphic>
+            <TextField fx:id="FIVE" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <graphic>
+            <TextField fx:id="SIX" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button7" GridPane.rowIndex="3">
+         <graphic>
+            <TextField fx:id="SEVEN" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <graphic>
+            <TextField fx:id="EIGHT" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#globalEvent" prefHeight="167.0" prefWidth="170.0" text="Button9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <graphic>
+            <TextField fx:id="NINE" prefHeight="25.0" prefWidth="111.0" />
+         </graphic>
+      </Button>
+      <MenuBar prefHeight="25.0" prefWidth="414.0" GridPane.columnSpan="3">
+        <menus>
+          <Menu mnemonicParsing="false" text="Game">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="play with AI" onAction="#AIActice" />
+              <MenuItem mnemonicParsing="false" onAction="#restart" text="2 player" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Exit" onAction="#exit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</GridPane>
